@@ -1,0 +1,11 @@
+meta:
+  site_title: "Seattle Hacks"
+  site_subtitle: "For Seattle developers, by Seattle developers"
+  site_language: "en"
+  absolute_baseurl: http://seattlehacks.com
+  domain: seattlehacks.com
+
+tag_dir: tag
+pygments: true
+markdown: rdiscount
+permalink: pretty

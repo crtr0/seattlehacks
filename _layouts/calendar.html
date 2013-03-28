@@ -1,0 +1,16 @@
+---
+layout: default
+title: Event Calendar
+---
+<h1>Calendar</h1>	
+<div class="calendar">
+{% for event in page.events %}
+  <div class="event">
+	<h2><a href="{{ event.url }}">{{ event.name] }}</a> @ {{ event.venue }}</h2>
+	<ul> 
+		<li>Start: {{ event.start }}</li>
+		<li>End: {{ event.start }}</li>
+	</ul>
+  </div>
+{% endfor %}
+</div>

@@ -1,10 +1,8 @@
-<!doctype html>
-<html>
-  <head>
-    <style>#logo {font-family: courier; font-size: 8px}</style>
-  </head>
-  <body>
-    <pre id="logo">
+---
+layout: default
+title: Home
+---
+<div class="logo">
           _____                    _____                    _____                _____                _____                    _____            _____          
          /\    \                  /\    \                  /\    \              /\    \              /\    \                  /\    \          /\    \         
         /::\    \                /::\    \                /::\    \            /::\    \            /::\    \                /::\____\        /::\    \        
@@ -49,6 +47,39 @@
         \::/    /                \::/    /                \::/    /                \:|   |                  \::/    /                                          
          \/____/                  \/____/                  \/____/                  \|___|                   \/____/                                           
                                                                                                                                                                
-    </pre>
-  </body>
-</html>
+</div>
+<h1 class="foo">Latest Post</h1>
+<div class="post" class="markdown-body">
+{% assign x = site.posts.first %}
+<h2><a href="{{ x.url }}">{{ x.title }}</a></h2>
+{{ x.content }}
+</div>
+<h1 class="foo">More Posts</h1>
+<ul class="posts">
+{% for post in site.posts limit:10 %}
+{% if forloop.index != 1 %}
+<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
+
+<h1 class="foo">Collaborators</h1>
+<div id="collaborators">
+</div>
+
+<script>
+function buildCollabs(response) {
+  response.data.forEach(function(collab) {
+    console.log(collab);
+    $('<a href="' + collab.url + '"><img src=' + collab.avatar_url + '"/></a>').appendTo('#collaborators');
+  });
+}
+
+
+$.ajax({
+  url: 'https://api.github.com/repos/crabasa/seattlehacks/collaborators?callback=buildCollabs'
+}).done(function() {
+
+});
+
+</script>
