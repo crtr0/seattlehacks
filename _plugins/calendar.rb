@@ -43,28 +43,29 @@ module Jekyll
 
   end
 
-  class EventInfo < Liquid::Block
-    def initialize(tag_name, string, tokens)
-       super
-    end
+#  class EventInfo < Liquid::Block
+#    def initialize(tag_name, string, tokens)
+#       super
+#    end
 
-    def render(context)
-      page = context.environments.first['page']
-      if page['tags'].include?('event')
-        page['tags'].each do |tag|  
-          if tag.start_with?('cal:')
-            key = tag.split('cal:')[1].split('=')[0]
-            value = tag.split('cal:')[1].split('=')[1]
-            page[key] = value
-          end
-        end
-        super
-      else
-        ''
-      end
-    end
-  end
+#    def render(context)
+#      page = context.environments.first['page']
+#      if page['tags'].include?('event')
+#        page['tags'].each do |tag|  
+#          if tag.start_with?('cal:')
+#            key = tag.split('cal:')[1].split('=')[0]
+#            value = tag.split('cal:')[1].split('=')[1]
+#            page[key] = value
+#          end
+#        end
+#        super
+#      else
+#        ''
+#      end
+#    end
+#  end
 
-  Liquid::Template.register_tag('eventinfo', EventInfo)
-
+#  Liquid::Template.register_tag('eventinfo', EventInfo)
 end
+
+
