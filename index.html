@@ -68,18 +68,12 @@ title: Home
 </div>
 
 <script>
-function buildCollabs(response) {
-  response.data.forEach(function(collab) {
-    console.log(collab);
-    $('<a href="' + collab.url + '"><img src=' + collab.avatar_url + '"/></a>').appendTo('#collaborators');
+$(document).ready(function() {
+  var url = 'https://api.github.com/repos/crabasa/seattlehacks/collaborators';
+  $.getJSON(url + '?callback=?', null, function(response) {
+    response.data.forEach(function(collab) {
+      $('<a href="' + collab.url + '"><img src=' + collab.avatar_url + '"/></a>').appendTo('#collaborators');
+    });    
   });
-}
-
-
-$.ajax({
-  url: 'https://api.github.com/repos/crabasa/seattlehacks/collaborators?callback=buildCollabs'
-}).done(function() {
-
 });
-
 </script>
