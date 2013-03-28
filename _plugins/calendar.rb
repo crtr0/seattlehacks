@@ -58,7 +58,6 @@ module Jekyll
             page[key] = value
           end
         end
-        puts page.inspect
         super
       else
         ''
