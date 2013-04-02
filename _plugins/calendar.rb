@@ -6,7 +6,7 @@ module Jekyll
     def generate(site)
       events = site.tags['event']
       if events
-        site.pages << CalendarPage.new(site, events)
+        #site.pages << CalendarPage.new(site, events)
       end
     end
   end

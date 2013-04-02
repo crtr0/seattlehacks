@@ -3,13 +3,18 @@ layout: default
 ---
 <div id="post" class="markdown-body">
 <h1>{{ page.title }}</h1>
-<!--div class="eventinfo">
-	<ul>
-		<li>Start: {{ page.start }}</li>
-		<li>End: {{ page.end }}</li>
-		<li>Venue: {{ page.venue }}</li>
-		<li>Website: <a href="{{ page.website }}">{{ page.website }}</a></li>
-	</ul>
-</div-->
+{% if page.tags contains 'event' %}
+<div class="eventinfo">
+  <ul>
+{% for tag in page.tags %}
+      {% if tag contains 'cal:' %}
+        {% capture key %}{{ tag | split:'cal:' | join:'' | split:'=' | first }}{% endcapture %}
+        {% capture value %}{{ tag | split:'cal:' | join:'' | split:'=' | last }}{% endcapture %}
+    <li>{{ key }}: {{ value }}</li>
+      {% endif %}
+{% endfor %}
+  </ul>
+</div>
+{% endif %}
 {{ content }}
 </div>
