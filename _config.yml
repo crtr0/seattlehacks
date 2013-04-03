@@ -4,6 +4,10 @@ meta:
   site_language: "en"
   absolute_baseurl: http://seattlehacks.com
   domain: seattlehacks.com
+  author:
+    full_name: Carter Rabasa
+    short_name: crabasa
+    email: carter@rabasa.com
 
 tag_dir: tag
 pygments: true
