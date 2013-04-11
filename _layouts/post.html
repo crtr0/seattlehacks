@@ -3,18 +3,22 @@ layout: default
 ---
 <div id="post" class="markdown-body">
 <h1>{{ page.title }}</h1>
+
 {% if page.tags contains 'event' %}
-<div class="eventinfo">
-  <ul>
-{% for tag in page.tags %}
-      {% if tag contains 'cal:' %}
-        {% capture key %}{{ tag | split:'cal:' | join:'' | split:'=' | first }}{% endcapture %}
-        {% capture value %}{{ tag | split:'cal:' | join:'' | split:'=' | last }}{% endcapture %}
-    <li>{{ key }}: {{ value }}</li>
-      {% endif %}
-{% endfor %}
-  </ul>
-</div>
+<div id="event-info"></div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
+<script id="event-info-template" type="text/x-handlebars-template">
+  <div class="start">{% raw %}{{info.start}}{% endraw %}</div>
+</script>
+<script>
+var tags = {};
+{% for tag in page.tags %}{% if tag contains 'cal:' %}{% capture key %}{{ tag | split:'cal:' | join:'' | split:'=' | first }}{% endcapture %}{% capture value %}{{ tag | split:'cal:' | join:'' | split:'=' | last }}{% endcapture %}
+tags['{{ key }}'] = '{{ value }}';{% endif %}{% endfor %}
+
+var source = $("#event-info-template").html();
+var template = Handlebars.compile(source);
+$("#event-info").html(template({info: tags}));
+</script>
 {% endif %}
 {{ content }}
 </div>
