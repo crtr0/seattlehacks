@@ -7,7 +7,7 @@ tags:
 - cal:allday=false
 - cal:start=2013-04-11T18:30:00-08:00
 - cal:end=2013-04-11T20:00:00-08:00
-- cal:venue=Makers Space
+- cal:venue=The Makers Space, Seattle, WA
 - cal:website=http://www.meetup.com/seattlejs/events/110183332/
 ---
 Agenda

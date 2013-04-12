@@ -5,19 +5,25 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 {% if page.tags contains 'event' %}
-<div id="event-info"></div>
+<div class="event-info"></div>
 <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
 <script id="event-info-template" type="text/x-handlebars-template">
-  <div class="start">{% raw %}{{info.start}}{% endraw %}</div>
+  <div class="name"><strong>Name:</strong> {% raw %}{{info.name}}{% endraw %}</div>
+  <div class="start"><strong>Start:</strong> {% raw %}{{info.start}}{% endraw %}</div>
+  <div class="end"><strong>End:</strong> {% raw %}{{info.end}}{% endraw %}</div>
+  <div class="allday"><strong>All Day? </strong>{% raw %}{{info.allday}}{% endraw %}</div>
+  <div class="website"><strong>Website: </strong>{% raw %}{{info.website}}{% endraw %}</div>
+  <div class="venue"><img src="http://maps.googleapis.com/maps/api/staticmap?center={% raw %}{{info.place}}{% endraw %}&markers=size:mid%7Ccolor:red%7C{% raw %}{{info.place}}{% endraw %}&size=340x200&maptype=roadmap&zoom=16&sensor=false&key=AIzaSyDMQjW3dMX-f9vI1IGrGpJjjtRLipg6xwA"/></div>
 </script>
 <script>
 var tags = {};
 {% for tag in page.tags %}{% if tag contains 'cal:' %}{% capture key %}{{ tag | split:'cal:' | join:'' | split:'=' | first }}{% endcapture %}{% capture value %}{{ tag | split:'cal:' | join:'' | split:'=' | last }}{% endcapture %}
 tags['{{ key }}'] = '{{ value }}';{% endif %}{% endfor %}
+tags['place'] = encodeURIComponent(tags['venue']);
 
 var source = $("#event-info-template").html();
 var template = Handlebars.compile(source);
-$("#event-info").html(template({info: tags}));
+$(".event-info").html(template({info: tags}));
 </script>
 {% endif %}
 {{ content }}

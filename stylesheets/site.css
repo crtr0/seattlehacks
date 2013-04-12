@@ -34,3 +34,9 @@ h1.foo {
     line-height:6px;
     font-weight:bold;
 }
+
+.event-info {
+  padding:5px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
