@@ -36,7 +36,9 @@ h1.foo {
 }
 
 .event-info {
+  margin-bottom:5px;
   padding:5px;
   border: 1px solid #aaa;
   border-radius: 5px;
 }
+

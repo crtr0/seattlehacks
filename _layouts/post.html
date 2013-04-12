@@ -5,22 +5,28 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 {% if page.tags contains 'event' %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+<script>
+var timing = function(start, end) {
+  // this can be improved another time
+  return moment(start).format('MM/DD/YYYY h:mma') + ' - ' + moment(end).format('MM/DD/YYYY h:mma');
+};
+</script>
+
 <div class="event-info"></div>
 <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
 <script id="event-info-template" type="text/x-handlebars-template">
   <div class="name"><strong>Name:</strong> {% raw %}{{info.name}}{% endraw %}</div>
-  <div class="start"><strong>Start:</strong> {% raw %}{{info.start}}{% endraw %}</div>
-  <div class="end"><strong>End:</strong> {% raw %}{{info.end}}{% endraw %}</div>
-  <div class="allday"><strong>All Day? </strong>{% raw %}{{info.allday}}{% endraw %}</div>
-  <div class="website"><strong>Website: </strong>{% raw %}{{info.website}}{% endraw %}</div>
-  <div class="venue"><img src="http://maps.googleapis.com/maps/api/staticmap?center={% raw %}{{info.place}}{% endraw %}&markers=size:mid%7Ccolor:red%7C{% raw %}{{info.place}}{% endraw %}&size=340x200&maptype=roadmap&zoom=16&sensor=false"/></div>
+  <div class="when"><strong>When:</strong> {% raw %}{{info.when}}{% endraw %}</div>
+  <div class="website"><strong>Website:</strong> {% raw %}<a href="{{info.website}}">{{info.website}}</a>{% endraw %}</div>
+  <div class="venue"><a href="//maps.google.com/maps?q={% raw %}{{info.place}}"><img src="http://maps.googleapis.com/maps/api/staticmap?center={% raw %}{{info.place}}{% endraw %}&markers=size:mid%7Ccolor:red%7C{% raw %}{{info.place}}{% endraw %}&size=340x200&maptype=roadmap&zoom=16&sensor=false"/></a></div>
 </script>
 <script>
 var tags = {};
 {% for tag in page.tags %}{% if tag contains 'cal:' %}{% capture key %}{{ tag | split:'cal:' | join:'' | split:'=' | first }}{% endcapture %}{% capture value %}{{ tag | split:'cal:' | join:'' | split:'=' | last }}{% endcapture %}
 tags['{{ key }}'] = '{{ value }}';{% endif %}{% endfor %}
 tags['place'] = encodeURIComponent(tags['venue']);
-
+tags['when'] = timing(tags['start'], tags['end']);
 var source = $("#event-info-template").html();
 var template = Handlebars.compile(source);
 $(".event-info").html(template({info: tags}));

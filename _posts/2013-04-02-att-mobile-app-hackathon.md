@@ -7,7 +7,7 @@ tags:
 - cal:allday=true
 - cal:start=2013-06-28T18:00:00-08:00
 - cal:end=2013-06-29T22:00:00-08:00
-- cal:venue=The Hub Seattle (220 2nd Ave South, Seattle, WA 98104)
+- cal:venue=The Hub Seattle, Seattle, WA
 - cal:website=http://mobileappedusea.eventbrite.com/
 ---
 **Have an app idea or need an app built for your business?**
