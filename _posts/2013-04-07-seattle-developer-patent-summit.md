@@ -8,9 +8,10 @@ tags:
 - cal:start=2013-04-24T18:00:00-08:00
 - cal:end=2013-04-24T20:30:00-8:00
 - cal:venue=HUB Seattle
+- cal:address=220 2nd Ave S, Seattle, WA 98104
 - cal:website=http://seattlepatentsummit.eventbrite.com/
 ---
-**SEATTLE DEVELOPER PATENT SUMMIT | #DevPatents**
+#SEATTLE DEVELOPER PATENT SUMMIT | #DevPatents
 
 The software patent system poses a significant challenge for developers. Vague claims, product life cycles shorter than the PTO review process, patent trolls and general uncertainty threaten to stile app industry innovation and growth. Throughout the year, the Application Developers Alliance will host events around the country and invite developers to share stories of claim letters, lawsuits, the challenges they face, and the need for software patent reform.  
 

@@ -7,7 +7,8 @@ tags:
 - cal:allday=false
 - cal:start=2013-04-27T09:00:00-08:00
 - cal:end=2013-04-28T17:00:00-08:00
-- cal:venue=Bellingham Technical College, Bellingham, WA
+- cal:venue=Bellingham Technical College
+- cal:address=3028 Lindbergh Ave, Bellingham, WA
 - cal:website=http://linuxfestnorthwest.org/
 ---
 
