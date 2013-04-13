@@ -19,7 +19,7 @@ var timing = function(start, end) {
   <div class="name"><strong>Name:</strong> {% raw %}{{info.name}}{% endraw %}</div>
   <div class="when"><strong>When:</strong> {% raw %}{{info.when}}{% endraw %}</div>
   <div class="website"><strong>Website:</strong> {% raw %}<a href="{{info.website}}">{{info.website}}</a>{% endraw %}</div>
-  <div class="venue"><a href="//maps.google.com/maps?q={% raw %}{{info.place}}"><img src="http://maps.googleapis.com/maps/api/staticmap?center={% raw %}{{info.place}}{% endraw %}&markers=size:mid%7Ccolor:red%7C{% raw %}{{info.place}}{% endraw %}&size=340x200&maptype=roadmap&zoom=16&sensor=false"/></a></div>
+  <div class="venue"><a href="//maps.google.com/maps?q={% raw %}{{info.place}}{% endraw %}"><img src="http://maps.googleapis.com/maps/api/staticmap?center={% raw %}{{info.place}}{% endraw %}&markers=size:mid%7Ccolor:red%7C{% raw %}{{info.place}}{% endraw %}&size=340x200&maptype=roadmap&zoom=16&sensor=false"/></a></div>
 </script>
 <script>
 var tags = {};
