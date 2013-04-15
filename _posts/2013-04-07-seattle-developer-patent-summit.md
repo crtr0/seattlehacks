@@ -1,15 +1,17 @@
 ---
 title: Seattle Developer Patent Summit
+author: kav
 layout: post
+event-name: Seattle Developer Patent Summit
+event-allday: false
+event-start: 2013-04-24T18:00:00-08:00
+event-end: 2013-04-24T20:30:00-8:00
+event-venue: HUB Seattle
+event-address: 220 2nd Ave S, Seattle, WA 98104
+event-website: http://seattlepatentsummit.eventbrite.com/
 tags:
-- event
-- cal:name=Seattle Developer Patent Summit
-- cal:allday=false
-- cal:start=2013-04-24T18:00:00-08:00
-- cal:end=2013-04-24T20:30:00-8:00
-- cal:venue=HUB Seattle
-- cal:address=220 2nd Ave S, Seattle, WA 98104
-- cal:website=http://seattlepatentsummit.eventbrite.com/
+- patents
+- appdevalliance
 ---
 #SEATTLE DEVELOPER PATENT SUMMIT | #DevPatents
 

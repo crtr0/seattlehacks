@@ -1,15 +1,17 @@
 ---
 title: LinuxFest Northwest 2013
+author: crabasa
 layout: post
+event-name: LinuxFest Northwest 2013
+event-allday: false
+event-start: 2013-04-27T09:00:00-08:00
+event-end: 2013-04-28T17:00:00-08:00
+event-venue: Bellingham Technical College
+event-address: 3028 Lindbergh Ave, Bellingham, WA
+event-website: http://linuxfestnorthwest.org/
 tags:
-- event
-- cal:name=LinuxFest Northwest 2013
-- cal:allday=false
-- cal:start=2013-04-27T09:00:00-08:00
-- cal:end=2013-04-28T17:00:00-08:00
-- cal:venue=Bellingham Technical College
-- cal:address=3028 Lindbergh Ave, Bellingham, WA
-- cal:website=http://linuxfestnorthwest.org/
+- conference
+- linux
 ---
 
 LinuxFest Northwest is an annual event produced by the Bellingham Linux Users Group, and volunteers from other northwest U.S. open source users groups. It is held on the campus of Bellingham Technical College (directions at the BTC website under ABOUT BTC). The Fest features Linux and open source experts and aficionados sharing their experience and enthusiasm with a wide variety of free and open source technologies.

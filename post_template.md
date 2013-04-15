@@ -1,14 +1,18 @@
 ---
 title: Title of Post
 layout: post
+event-name: Seattle Developer Patent Summit
+event-allday: false
+event-start: 2013-04-24T18:00:00-08:00
+event-end: 2013-04-24T20:30:00-8:00
+event-venue: HUB Seattle
+event-address: 220 2nd Ave S, Seattle, WA 98104
+event-website: http://seattlepatentsummit.eventbrite.com/
 tags:
-- event
-- cal:name=Name of Event
-- cal:allday=false
-- cal:start=2013-04-11T18:30:00-08:00
-- cal:end=2013-04-11T20:00:00-08:00
-- cal:venue=Venue
-- cal:website=http://url.for.more.info
+- any
+- tags
+- you
+- like
 ---
 Feel free to mix <b>HTML</b> and *Markdown* sytax
 

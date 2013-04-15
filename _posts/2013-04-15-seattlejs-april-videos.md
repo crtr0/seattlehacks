@@ -1,5 +1,6 @@
 ---
 title: SeattleJS April 2013 Videos
+author: crabasa
 layout: post
 tags:
 - seattlejs

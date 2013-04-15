@@ -3,35 +3,27 @@ layout: default
 ---
 <div id="post" class="markdown-body">
 <h1>{{ page.title }}</h1>
-
-{% if page.tags contains 'event' %}
-<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
-<script>
-var timing = function(start, end) {
-  // this can be improved another time
-  return moment(start).format('MM/DD/YYYY h:mma') + ' - ' + moment(end).format('MM/DD/YYYY h:mma');
-};
-</script>
-
-<div class="event-info"></div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
-<script id="event-info-template" type="text/x-handlebars-template">
-  <div class="what"><strong>What:</strong> {% raw %}{{info.name}}{% endraw %}</div>
-  <div class="when"><strong>When:</strong> {% raw %}{{info.when}}{% endraw %}</div>
-  <div class="where"><strong>Where:</strong> {% raw %}{{info.venue}}{% endraw %}</div>
-  <div class="website"><strong>Website:</strong> {% raw %}<a href="{{info.website}}">{{info.website}}</a>{% endraw %}</div>
-  <div class="venue"><a href="//maps.google.com/maps?q={% raw %}{{info.address}}{% endraw %}"><img src="http://maps.googleapis.com/maps/api/staticmap?center={% raw %}{{info.address}}{% endraw %}&markers=size:mid%7Ccolor:red%7C{% raw %}{{info.address}}{% endraw %}&size=340x200&maptype=roadmap&zoom=16&sensor=false"/></a></div>
-</script>
-<script>
-var tags = {};
-{% for tag in page.tags %}{% if tag contains 'cal:' %}{% capture key %}{{ tag | split:'cal:' | join:'' | split:'=' | first }}{% endcapture %}{% capture value %}{{ tag | split:'cal:' | join:'' | split:'=' | last }}{% endcapture %}
-tags['{{ key }}'] = '{{ value }}';{% endif %}{% endfor %}
-tags['address'] = encodeURIComponent(tags['address']);
-tags['when'] = timing(tags['start'], tags['end']);
-var source = $("#event-info-template").html();
-var template = Handlebars.compile(source);
-$(".event-info").html(template({info: tags}));
-</script>
+<div class="byline">Submitted by: <span id="author"></span>
+| Tags: {% for tag in page.tags %}{{ tag }} {% endfor %}
+</div>
+{% if page.event-name %}
+<div class="event-info">
+  <div class="name"><strong>Name:</strong> {{page.event-name}}</div>
+  <div class="start"><strong>Start:</strong> {{page.event-start | date: "%b %d %Y, %I:%M %p"}}</div>
+  <div class="end"><strong>End:</strong> {{page.event-end | date: "%b %d %Y, %I:%M %p"}}</div>
+  <div class="venue"><strong>Venue:</strong> {{page.event-venue}}</div>
+  <div class="website"><strong>Website:</strong> <a href="{{page.event-website}}">{{page.event-website}}</a></div>
+  <div class="address"><a href="//maps.google.com/maps?q={{page.event-address | cgi_escape}}"><img src="http://maps.googleapis.com/maps/api/staticmap?center={{page.event-address | cgi_escape}}&markers=size:mid%7Ccolor:red%7C{{page.event-address | cgi_escape}}&size=340x200&maptype=roadmap&zoom=16&sensor=false"/></a></div>
+</div>
 {% endif %}
 {{ content }}
 </div>
+
+<script>
+$(document).ready(function() {
+  var url = 'https://api.github.com/users/{{ page.author }}';
+  $.getJSON(url + '?callback=?', null, function(response) {
+    $('<a href="' + response.data.html_url + '">' + response.data.login + '</a>').appendTo('#author');
+  });
+});
+</script>

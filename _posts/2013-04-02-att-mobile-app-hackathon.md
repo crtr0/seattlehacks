@@ -1,15 +1,17 @@
 ---
 title: AT&T Mobile App Hackathon
+author: crabasa
 layout: post
+event-name: AT&T Mobile App Hackathon
+event-allday: true
+event-start: 2013-06-28T18:00:00-08:00
+event-end: 2013-06-29T22:00:00-08:00
+event-venue: Hub Seattle
+event-address: 220 2nd Ave S, Seattle, WA 98104
+event-website: http://mobileappedusea.eventbrite.com/
 tags:
-- event
-- cal:name=AT&T Mobile App Hackathon
-- cal:allday=true
-- cal:start=2013-06-28T18:00:00-08:00
-- cal:end=2013-06-29T22:00:00-08:00
-- cal:venue=Hub Seattle
-- cal:address=220 2nd Ave S, Seattle, WA 98104
-- cal:website=http://mobileappedusea.eventbrite.com/
+- hackathon
+- mobile
 ---
 **Have an app idea or need an app built for your business?**
 

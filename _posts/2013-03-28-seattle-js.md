@@ -1,15 +1,17 @@
 ---
 title: Seattle JS - Test the Web Forward and Fun With Angular.js
+author: crabasa
 layout: post
+event-name: Seattle JS - Test the Web Forward and Fun With Angular.js
+event-allday: false
+event-start: 2013-04-11T18:30:00-08:00
+event-end: 2013-04-11T20:00:00-08:00
+event-venue: The Makers Space
+event-address: 92 Lenora St, Seattle, WA
+event-website: http://www.meetup.com/seattlejs/events/110183332/
 tags:
-- event
-- cal:name=Seattle JS - Test the Web Forward and Fun With Angular.js
-- cal:allday=false
-- cal:start=2013-04-11T18:30:00-08:00
-- cal:end=2013-04-11T20:00:00-08:00
-- cal:venue=The Makers Space
-- cal:address=92 Lenora St, Seattle, WA
-- cal:website=http://www.meetup.com/seattlejs/events/110183332/
+- meetup
+- js
 ---
 Agenda
 ------

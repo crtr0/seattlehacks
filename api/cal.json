@@ -1,20 +1,20 @@
 ---
-title: doesn't matter
+foo: bar
 ---
 {"events": [
 {% assign first = true %}
 {% for post in site.posts %}
-  {% if post.tags contains 'event' %}  
+  {% if post.event-name %}  
     {% if first == false %},{% endif %}
     {% if first == true %}{% assign first = false %}{% endif %}
   {
-    {% for tag in post.tags %}
-      {% if tag contains 'cal:' %}
-        {% capture key %}{{ tag | split:'cal:' | join:'' | split:'=' | first }}{% endcapture %}
-        {% capture value %}{{ tag | split:'cal:' | join:'' | split:'=' | last }}{% endcapture %}
-    "{{ key }}": "{{ value }}",
-      {% endif %}
-    {% endfor %}
+    "name": "{{ post.event-name }}",
+    "allday": "{{ post.event-allday }}",
+    "start": "{{ post.event-start }}",
+    "end": "{{ post.event-end }}",
+    "venue": "{{ post.event-venue }}",
+    "address": "{{ post.event-address }}",
+    "website": "{{ post.event-website }}",
     "url": "{{ post.url }}"
   }
   {% endif %}

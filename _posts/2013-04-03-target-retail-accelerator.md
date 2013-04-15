@@ -1,5 +1,6 @@
 ---
 title: The Co.Labs And Target $75,000 Retail Accelerator 
+author: crabasa
 layout: post
 tags:
 - contest

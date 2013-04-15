@@ -12,31 +12,35 @@ Seattle Hacks is a community-driven online resource by devs for devs. The goal i
 </ul>
 <h2>Submitting a Post</h2>
 <ol>
-	<li>Fork this repo</li>
+	<li>Fork this repo abnd checkout the <code>gh-pages</code> branch</li>
 	<li>Compose your post using Markdown syntax</li>
 	<li>Name the file YYYY-MM-DD-title.md and copy to _posts directory</li>
 	<li>Submit a pull request for this new file</li>
 </ol>
-<p>Please make sure you include a YAML header at the top of the file that defines the <code>title</code> or your post and specifies the <code>post</code> layout.</p>
+<p>Please make sure you include a <a href="https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter">YAML header</a> at the top of the file that defines the <code>title</code> of your post and specifies the "post" for <code>layout</code>. Please also include your Github handle for the <code>author</code>.</p>
 <pre>
 ---
 title: Test
 layout: post
+author: github_handle
+tags:
+- any
+- tags
+- you
+- like
 ---
 </pre>
 <h2>Submitting an Event</h2>
 <p>Submitting an event is just like submitting a post. Follow the instructions above and you're 90% of the way there. Consider the content of the post to both be an announcement of your event and the core information that people need to know to find your event.</p>
-<p>The only difference is that in order for your event to make it into our calendar you need to define some additional tags. All of these tags are required:</p>
+<p>The only difference is that in order for your event to make it into our calendar you need to define some additional info. All of these variables are **required**:</p>
 <pre>
 ---
-tags:
-- event
-- cal:name=Test Event #1
-- cal:allday=false
-- cal:start=2013-03-28T14:10:04+00:00
-- cal:end=2013-03-28T14:10:04+00:00
-- cal:venue=Hub Seattle
-- cal:address=220 2nd Ave S, Seattle, WA 98104
-- cal:website=http://test.event.com
+event-name: Seattle Developer Patent Summit
+event-allday: false
+event-start: 2013-04-24T18:00:00-08:00
+event-end: 2013-04-24T20:30:00-8:00
+event-venue: HUB Seattle
+event-address: 220 2nd Ave S, Seattle, WA 98104
+event-website: http://seattlepatentsummit.eventbrite.com/
 ---
 </pre>
