@@ -1,5 +1,5 @@
 ---
-foo: bar
+layout: nil
 ---
 {"events": [
 {% assign first = true %}

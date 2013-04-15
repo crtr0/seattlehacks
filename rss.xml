@@ -13,7 +13,7 @@ layout: nil
         {% for post in site.posts limit:15 %}
 
         <item>
-            <title>{{ post.title }}</title>
+            <title>{{ post.title | xml_escape }}</title>
             <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
             <description>{{ post.content | xml_escape }}</description>
             <link>{{ site.meta.absolute_baseurl }}{{ post.url }}</link>
