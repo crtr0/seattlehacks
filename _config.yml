@@ -9,7 +9,6 @@ meta:
     short_name: crabasa
     email: carter@rabasa.com
 
-tag_dir: tag
 pygments: true
 markdown: rdiscount
 permalink: pretty
