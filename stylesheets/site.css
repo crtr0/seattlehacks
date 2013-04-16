@@ -6,15 +6,16 @@ body {
   padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
 }
 
-.extra {
-  color: #5B9C64;
-  margin-bottom:10px;
-  border-bottom: 2px solid #5B9C64;
-}
-
 .topbar .fill {
 	background-color: #5B9C64;
 	background-image: -webkit-linear-gradient(top, #5B9C64, #517B58);
+}
+
+h1.extra {
+  color: #5B9C64;
+  margin-bottom:10px;
+  border-bottom: 4px solid #5B9C64;
+  font-size:36px;
 }
 
 /* The white background content wrapper */
@@ -41,10 +42,16 @@ body {
   border-radius: 5px;
 }
 
+h1.title {
+  margin-bottom: 2px;
+}
+
 .byline { 
   color: #999; 
   margin-bottom:10px;
   padding-bottom:5px;
-  border-bottom: 2px solid #999; 
+  border-bottom: 2px solid #999;
+  font-size:1.2em; 
 }
+
 
