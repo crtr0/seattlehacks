@@ -1,6 +1,8 @@
 Seattle Hacks
 =============
 
+![Seattle Hacks logo](http://seattlehacks.com/images/seattlehacks_logo_200.png)
+
 This is the repo for [Seattle Hacks][], a community-driven online resource by devs for devs. The purpose of the site is to highlight the best resources and events for developers in the Seattle area. One of the design goals was to create a site that would be resistant to blog and event listing SPAM while still providing minimal friction to developers for posting content. Here's how we did it:
 
 GitHub Pages powered website 
@@ -13,10 +15,10 @@ Jekyll powered blog
 
 Submitting a post is as simple as composing a properly named and formatted markdown file and sending a pull request. When a post goes out, it will also be automatically tweeted by [@SeattleHacks][]. All pull requests are reviewed by the [collaborators][] for this repo. This is the second step in ensuring the quality of the content being posted.
 
-Calendar of events
-------------------
+JSON powered calendar of events
+-------------------------------
 
-If your blog post is about an upcoming event, you can simply add some meta-tags to your blog post and it will be added to an automatically re-generated [JSON file][]. This JSON file functions as an API for the calendar page.
+If your blog post is about an upcoming event, you can simply add some meta-tags to your blog post and it will be added to an automatically re-generated [JSON file][]. This JSON file functions as an API for the calendar page. This allows us to deal with the shortcoming of vanilla Jekyll and the fact that GitHub Pages does not support custom plugins.
 
 Powered by the Developer Community
 ----------------------------------
