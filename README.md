@@ -1,7 +1,7 @@
 Seattle Hacks
 =============
 
-![Seattle Hacks logo](http://seattlehacks.com/images/seattlehacks_logo_200.png)
+![Seattle Hacks logo](http://seattlehacks.com/images/seattlehacks_logo_large.png)
 
 This is the repo for [Seattle Hacks][], a community-driven online resource by devs for devs. The purpose of the site is to highlight the best resources and events for developers in the Seattle area. One of the design goals was to create a site that would be resistant to blog and event listing SPAM while still providing minimal friction to developers for posting content. Here's how we did it:
 
