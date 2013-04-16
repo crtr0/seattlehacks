@@ -6,11 +6,10 @@ body {
   padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
 }
 
-/* good lord, rename this class */
-h1.foo {
-  font-size:30px;
+.extra {
+  color: #5B9C64;
   margin-bottom:10px;
-  border-bottom: thin dotted #aaa;
+  border-bottom: 2px solid #5B9C64;
 }
 
 .topbar .fill {
@@ -42,5 +41,10 @@ h1.foo {
   border-radius: 5px;
 }
 
-.byline { color: #999 }
+.byline { 
+  color: #999; 
+  margin-bottom:10px;
+  padding-bottom:5px;
+  border-bottom: 2px solid #999; 
+}
 
