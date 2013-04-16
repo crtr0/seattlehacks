@@ -1,41 +1,32 @@
 Seattle Hacks
 =============
 
-Code &amp; website for http://seattlehacks.com
+This is the repo for [Seattle Hacks][], a community-driven online resource by devs for devs. The purpose of the site is to highlight the best resources and events for developers in the Seattle area. One of the design goals was to create a site that would be resistant to blog and event listing SPAM while still providing minimal friction to developers for posting content. Here's how we did it:
 
-Submitting a Post
------------------
-Submitting a post is as simple as sending a pull request:
+GitHub Pages powered website 
+----------------------------
 
-1. Fork this repo
-2. Checkout the gh-pages branch 
-3. Compose your post using Markdown syntax
-4. Name the file YYYY-MM-DD-title.md and copy to _posts directory
-5. Submit a pull request for this new file
+Anyone can fork this repo and submit a pull request to update the content of this website. While this is easy enough to do for a developer, it is quite difficult for a non-developer. This is the first step in ensuring that only developers are posting content to the site.
 
-Please make sure you include a YAML header at the top of the file that defines the `title` or your post and specifies the `post` layout.
-```
----
-title: Test
-layout: post
----
-```
-
-Submitting an Event
+Jekyll powered blog
 -------------------
-Submitting an event is just like submitting a post. Follow the instructions above and you're 90% of the way there. Consider the content of the post to both be an announcement of your event and the core information that people need to know to find your event.
 
-The only difference is that in order for your event to make it into our calendar you need to define some additional tags. All of these tags are required:
+Submitting a post is as simple as composing a properly named and formatted markdown file and sending a pull request. When a post goes out, it will also be automatically tweeted by [@SeattleHacks][]. All pull requests are reviewed by the [collaborators][] for this repo. This is the second step in ensuring the quality of the content being posted.
 
-```
----
-tags:
-- event
-- cal:name=Test Event #1
-- cal:allday=false
-- cal:start=2013-03-28T14:10:04+00:00
-- cal:end=2013-03-28T14:10:04+00:00
-- cal:venue=Hub Seattle
-- cal:website=http://test.event.com
----
-```
+Calendar of events
+------------------
+
+If your blog post is about an upcoming event, you can simply add some meta-tags to your blog post and it will be added to an automatically re-generated [JSON file][]. This JSON file functions as an API for the calendar page.
+
+Powered by the Developer Community
+----------------------------------
+
+Seattle Hacks is powered by the developer community. The content of the site is only as good as the contributions from the community. 
+
+The software is MIT licensed. Feel free to fork and deploy in your own community!
+
+
+[Seattle Hacks]:http://seattlehacks.com
+[@SeattleHacks]:http://twitter.com/SeattleHacks
+[collaborators]:https://github.com/crabasa/seattlehacks/settings/collaboration
+[JSON file]:http://seattlehacks.com/api/cal.json
