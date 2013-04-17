@@ -1,5 +1,6 @@
 ---
 title: Hack Things April Meetup
+author: crabasa
 layout: post
 event-name: Hack Things April 2013 Meetup
 event-allday: false

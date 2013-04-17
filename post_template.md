@@ -1,7 +1,8 @@
 ---
 title: Title of Post
+author: github_handle
 layout: post
-event-name: Seattle Developer Patent Summit
+event-name: Name of Event
 event-allday: false
 event-start: 2013-04-24T18:00:00-08:00
 event-end: 2013-04-24T20:30:00-8:00
