@@ -4,8 +4,8 @@ author: crabasa
 layout: post
 event-name: Hack Things April 2013 Meetup
 event-allday: false
-event-start: 2013-04-24T17:00:00-08:00
-event-end: 2013-04-24T19:00:00-8:00
+event-start: 2013-04-24 17:00:00
+event-end: 2013-04-24 19:00:00
 event-venue: Maveron
 event-address: 411 First Avenue South, Suite 600, Seattle, WA 98104
 event-website: http://www.hackthings.com/about/the-hack-things-meetup/

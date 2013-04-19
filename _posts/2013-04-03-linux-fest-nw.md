@@ -4,8 +4,8 @@ author: crabasa
 layout: post
 event-name: LinuxFest Northwest 2013
 event-allday: false
-event-start: 2013-04-27T09:00:00-08:00
-event-end: 2013-04-28T17:00:00-08:00
+event-start: 2013-04-27 09:00:00
+event-end: 2013-04-28 17:00:00
 event-venue: Bellingham Technical College
 event-address: 3028 Lindbergh Ave, Bellingham, WA
 event-website: http://linuxfestnorthwest.org/
