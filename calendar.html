@@ -6,7 +6,7 @@ title: Calendar
 <div id="calendar">
 </div>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+<script src="/javascripts/moment.min.js"></script>
 <script>
 
 var timing = function(start, end) {
@@ -19,10 +19,12 @@ $(document).ready(function() {
     var groups = _.groupBy(response.events, function(event) { return moment(event.start).format('YYYY-MM-DD'); }); 
     days = _.sortBy(Object.keys(groups), function(day) { return day });
     days.forEach(function(day) {
-      $('<h2>' + moment(day).format('MMM Do') + '</h2>').appendTo('#calendar');
-      groups[day].forEach(function(event) {
-        $('<div class="event"><div class="title"><a href="' + event.url + '">' + event.name + ' @ ' + event.venue  + '</a></div><div class="timing">' + timing(event.start, event.end) + '</div></div>').appendTo('#calendar');
-      });
+      if (new Date(day) > new Date()) {
+        $('<h2>' + moment(day).format('MMMM Do') + '</h2>').appendTo('#calendar');
+        groups[day].forEach(function(event) {
+          $('<div class="event"><div class="title"><a href="' + event.url + '">' + event.name + ' @ ' + event.venue  + '</a></div><div class="timing">' + event.start + ' - ' + event.end + '</div></div>').appendTo('#calendar');
+        });
+      }
     });    
   });
 });
