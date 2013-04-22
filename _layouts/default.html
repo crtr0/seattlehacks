@@ -26,37 +26,36 @@
   <head>
     <meta charset="utf-8">
     <title>Seattle Hacks - {{ page.title }}</title>
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="/stylesheets/site.css">
     <meta name="description" content="">
     <link href="/rss.xml" rel="alternate" title="{{ site.meta.site_title }} (RSS)" type="application/rss+xml" />
-    <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/underscore-min.js"></script>
   </head>
   <body>
     <a href="https://github.com/crabasa/seattlehacks"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:999999" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="/">{{ site.meta.site_title }}</a>
-          <ul class="nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/calendar">Calendar</a></li>
-            <li><a href="/archive">Archive</a></li>
-            <li><a href="/submit">Submit</a></li>
-            <li><a href="/search">Search</a></li>
-          </ul>
-        </div>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <a class="brand" href="/">{{ site.meta.site_title }}</a>
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/calendar">Calendar</a></li>
+          <li><a href="/archive">Archive</a></li>
+          <li><a href="/submit">Submit</a></li>
+          <li><a href="/search">Search</a></li>
+        </ul>
       </div>
     </div>
-
-    <div class="container">
+    <div class="container-fluid">
       <div class="content">
-        <div class="row">
-          <div class="span10">
+        <div class="row-fluid">
+          <div class="span9">
             {{ content }}
           </div>
-          <div class="span4">
+          <div class="span3">
             <h3>About Us</h3>
             <p>Seattle Hacks is a community-driven resource for the developer community in Seattle, maintained by developers for developers. <a href="/submit">Contributing is easy</a>, just submit a pull request! Hit us up <a href="http://twitter.com/seattlehacks">@SeattleHacks</a> if you have any questions or feedback.</p>
             <h3>Local Meetups</h3>
@@ -99,7 +98,7 @@
       <footer>
         <p>&copy; Event Loop LLC 2010-2013</p>
       </footer>
-    </div> <!-- /container -->
+    </div>
 
       <section id="javascript">
 
