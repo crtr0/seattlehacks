@@ -48,10 +48,10 @@ title: Home
          \/____/                  \/____/                  \/____/                  \|___|                   \/____/                                           
                                                                                                                                                                
 </div>
-<h1 class="extra">Latest Post</h1>
+<h1>Latest Post</h1>
 {% assign page = site.posts.first %}
 {% include post.html %}
-<h1 class="extra">More Posts</h1>
+<h1>More Posts</h1>
 <ul class="posts">
 {% for post in site.posts limit:10 %}
 {% if forloop.index != 1 %}
@@ -60,7 +60,7 @@ title: Home
 {% endfor %}
 </ul>
 
-<h1 class="extra">Collaborators</h1>
+<h1>Collaborators</h1>
 <div id="collaborators">
 </div>
 
