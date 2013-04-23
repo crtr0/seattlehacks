@@ -60,17 +60,32 @@ title: Home
 {% endfor %}
 </ul>
 
-<h1>Collaborators</h1>
+<h1>Community</h1>
+<p>This site would not be possible without the contributions of the developer
+community here in Seattle, one pull request at a time. Thank you!</p>
 <div id="collaborators">
 </div>
 
 <script>
+function renderPeeps(peeps) {
+  peeps.forEach(function(peep) {
+    $('<a href="' + peep.url + '"><img width="80" height="80" src="' + peep.avatar_url + '"/></a>').appendTo('#collaborators');
+  });    
+}
+
 $(document).ready(function() {
-  var url = 'https://api.github.com/repos/crabasa/seattlehacks/collaborators';
-  $.getJSON(url + '?callback=?', null, function(response) {
-    response.data.forEach(function(collab) {
-      $('<a href="' + collab.url + '"><img src=' + collab.avatar_url + '"/></a>').appendTo('#collaborators');
-    });    
+  var peeps = {};
+  var forksUrl = 'https://api.github.com/repos/crabasa/seattlehacks/forks?callback=?'; 
+  var collabsUrl = 'https://api.github.com/repos/crabasa/seattlehacks/collaborators?callback=?';
+  $.when( $.getJSON(forksUrl), $.getJSON(collabsUrl) ).done(function(forks, collabs) {
+    console.log(forks);
+    forks[0].data.forEach(function(fork) {
+      peeps[fork.owner.login] = {url: 'https://github.com/'+fork.owner.login, avatar_url: fork.owner.avatar_url};
+    });
+    collabs[0].data.forEach(function(collab) {
+      peeps[collab.login] = {url: 'https://github.com/'+collab.login, avatar_url: collab.avatar_url};
+    });
+    renderPeeps(_.values(peeps));
   });
 });
 </script>
