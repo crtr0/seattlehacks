@@ -19,7 +19,7 @@ $(document).ready(function() {
     var groups = _.groupBy(response.events, function(event) { return moment(event.start).format('YYYY-MM-DD'); }); 
     days = _.sortBy(Object.keys(groups), function(day) { return day });
     days.forEach(function(day) {
-      if (new Date(day) > new Date()) {
+      if (moment(day).isAfter(moment().subtract('days', 1))) {
         $('<h2>' + moment(day).format('MMMM Do') + '</h2>').appendTo('#calendar');
         groups[day].forEach(function(event) {
           $('<div class="event"><div class="title"><a href="' + event.url + '">' + event.name + ' @ ' + event.venue  + '</a></div><div class="timing">' + event.start + ' - ' + event.end + '</div></div>').appendTo('#calendar');
