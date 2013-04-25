@@ -43,8 +43,9 @@
         <ul class="nav">
           <li><a href="/">Home</a></li>
           <li><a href="/calendar">Calendar</a></li>
-          <li><a href="/archive">Archive</a></li>
           <li><a href="/submit">Submit</a></li>
+          <li><a href="/venues">Venues</a></li>
+          <li><a href="/archive">Archive</a></li>
           <li><a href="/search">Search</a></li>
           <li><a href="/events.ics" title="iCal feed"><i class="icon-calendar"></i></a></li>
           <li><a href="/rss.xml" title="RSS feed"><img src="/img/rss-icon.png"/></a></li>
@@ -56,6 +57,11 @@
       <div class="content">
         <div class="row-fluid">
           <div class="span9">
+            {% if page.title != 'Home' %}
+            <div class="page-header">
+              <h1>{{ page.title }}</h1>
+            </div>
+            {% endif %}
             {{ content }}
           </div>
           <div class="span3">
