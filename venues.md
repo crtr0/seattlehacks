@@ -6,7 +6,7 @@ Awesome developer events don't happen without an awesome venue with great Wi-Fi.
 
 Feel free to [contribute][] more venues, just follow the format you see below. You can use the handy-dandy [static Google map generator][] to build a nice map to include.
 
-##Hub Seattle
+##Hub Seattle <a name="hub-seattle"></a>
 ![map](http://maps.google.com/maps/api/staticmap?center=47.600744,-122.331422&zoom=14&markers=47.600744,-122.331422&size=500x300&sensor=false)
 
 * Location: Pioneer Square
@@ -14,7 +14,7 @@ Feel free to [contribute][] more venues, just follow the format you see below. Y
 * Contact: Sarah Studer, sarah@thehubseattle.com
 * Website: [http://thehubseattle.com/special-event-space/](http://thehubseattle.com/special-event-space)
 
-##Tagboard HQ
+##Tagboard HQ <a name="tagboard">
 ![map](http://maps.google.com/maps/api/staticmap?center=47.670907,-122.120891&zoom=15&markers=size:mid|47.673241,-122.123079&path=color:0x0000FF80|weight:5|47.67140,-122.12317&size=500x300&sensor=false)
 
 * Location: Redmond (downtown)
