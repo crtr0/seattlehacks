@@ -20,7 +20,7 @@ Feel free to [contribute][] more venues, just follow the format you see below. Y
 * Location: Redmond (downtown)
 * Address: 7826 Leary Way NE, Suite 201, Redmond, WA 98052
 * Contact: Sean Sperte, sean@tagboard.com
-* Website: [http://tagboard.com/](tagboard.com)
+* Website: [http://tagboard.com/](http://tagboard.com)
 
 [contribute]: /submit
 [static google map generator]: http://gmaps-samples.googlecode.com/svn/trunk/simplewizard/makestaticmap.html
