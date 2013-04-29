@@ -14,7 +14,7 @@ Feel free to [contribute][] more venues, just follow the format you see below. Y
 * Contact: Sarah Studer, sarah@thehubseattle.com
 * Website: [http://thehubseattle.com/special-event-space/](http://thehubseattle.com/special-event-space)
 
-##Tagboard HQ <a name="tagboard">
+##Tagboard HQ <a name="tagboard"></a>
 ![map](http://maps.google.com/maps/api/staticmap?center=47.670907,-122.120891&zoom=15&markers=size:mid|47.673241,-122.123079&path=color:0x0000FF80|weight:5|47.67140,-122.12317&size=500x300&sensor=false)
 
 * Location: Redmond (downtown)
