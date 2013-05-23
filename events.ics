@@ -1,0 +1,21 @@
+---
+layout: nil
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Seattle Hacks//Events Calendar v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Seattle Hacks Event Calendar
+X-WR-TIMEZONE:America/Los_Angeles
+X-WR-CALDESC:Developer events going on in or around Seattle, WA{% for post in site.posts %}{% if post.event-name %}
+BEGIN:VEVENT
+UID: {{ post.id }}@seattlehacks.com
+DTSTAMP:{{ post.date | date: "%Y%m%dT%H%M%S"}}
+DTSTART:{{ post.event-start | date: "%Y%m%dT%H%M%S"}}
+DTEND:{{ post.event-end | date: "%Y%m%dT%H%M%S"}}
+LOCATION:{{ post.event-address }}
+SUMMARY:{{ post.event-name }}
+DESCRIPTION:More info at {{ post.event-website }}
+END:VEVENT{% endif %}{% endfor %}
+END:VCALENDAR
