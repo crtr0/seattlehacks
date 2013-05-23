@@ -1,0 +1,53 @@
+---
+layout: default
+title: Contributing to Seattle Hacks
+---
+Seattle Hacks is a community-driven online resource by devs for devs. The goal is to highlight the best resources and events for developers in the Seattle area:
+<ul>
+	<li><a href="http://pages.github.com">GitHub Pages</a> powered website - anyone can fork this repo and submit a pull request to update the content of this website.</li>
+	<li><a href="https://github.com/mojombo/jekyll">Jekyll</a> powered blog - submitting a post is as simple as composing a markdown file and sending a pull request.</li>
+	<li>Calendar of events - if your blog post is about an upcoming event, you can simply add some meta-tags to your blog post and it will be added to an automatically generated calendar.</li>
+	<li>When a post goes out, it will also be automatically tweeted by <a href="http://twitter.com/SeattleHacks">@SeattleHacks</a>.</li>
+</ul>
+<h2>Editing Pages</h2>
+<ol>
+	<li>Fork this repo and checkout the <code>gh-pages</code> branch</li>
+	<li>Edit the file you'd like to modify</li>
+	<li>Submit a pull request</li>
+</ol>
+<p>We will review all pull requests and make sure they are on-topic and adding value to the developer community in Seattle.</p>
+<h2>Submitting a Post</h2>
+<p>Same as above, with a few extra steps:</p>
+<ol>
+	<li>Compose your post using Markdown syntax</li>
+	<li>Name the file YYYY-MM-DD-title.md and copy to _posts directory</li>
+	<li>Make sure the commit message is the same as the post title (i.e. <code>git commit -m "{post title}"</code>)</li>
+	<li>Submit a pull request for this new file</li>	
+</ol>
+<p>Please make sure you include a <a href="https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter">YAML header</a> at the top of the file that defines the <code>title</code> of your post and specifies the "post" for <code>layout</code>. Please also include your Github handle for the <code>author</code>.</p>
+<pre>
+---
+title: Test
+layout: post
+author: github_handle
+tags:
+- any
+- tags
+- you
+- like
+---
+</pre>
+<h2>Submitting an Event</h2>
+<p>Submitting an event is just like submitting a post. Follow the instructions above and you're 90% of the way there. Consider the content of the post to both be an announcement of your event and the core information that people need to know to find your event.</p>
+<p>The only difference is that in order for your event to make it into our calendar you need to define some additional info. All of these variables are **required**:</p>
+<pre>
+---
+event-name: Seattle Developer Patent Summit
+event-allday: false
+event-start: 2013-04-24T18:00:00-08:00
+event-end: 2013-04-24T20:30:00-8:00
+event-venue: HUB Seattle
+event-address: 220 2nd Ave S, Seattle, WA 98104
+event-website: http://seattlepatentsummit.eventbrite.com/
+---
+</pre>

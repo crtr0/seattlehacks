@@ -1,0 +1,22 @@
+---
+layout: nil
+---
+{"events": [
+{% assign first = true %}
+{% for post in site.posts %}
+  {% if post.event-name %}  
+    {% if first == false %},{% endif %}
+    {% if first == true %}{% assign first = false %}{% endif %}
+  {
+    "name"    : "{{ post.event-name | xml_escape }}",
+    "allday"  : "{{ post.event-allday }}",
+    "start"   : "{{ post.event-start }}",
+    "end"     : "{{ post.event-end }}",
+    "venue"   : "{{ post.event-venue }}",
+    "address" : "{{ post.event-address }}",
+    "website" : "{{ post.event-website }}",
+    "url"     : "{{ post.url }}"
+  }
+  {% endif %}
+{% endfor %}
+]}

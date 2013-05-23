@@ -1,0 +1,14 @@
+meta:
+  site_title: "Seattle Hacks"
+  site_subtitle: "For Seattle developers, by Seattle developers"
+  site_language: "en"
+  absolute_baseurl: http://seattlehacks.com
+  domain: seattlehacks.com
+  author:
+    full_name: Carter Rabasa
+    short_name: crabasa
+    email: carter@rabasa.com
+
+pygments: true
+markdown: rdiscount
+permalink: pretty
