@@ -75,13 +75,8 @@ function renderPeeps(peeps) {
 
 $(document).ready(function() {
   var peeps = {};
-  var forksUrl = 'https://api.github.com/repos/crabasa/seattlehacks/forks?callback=?'; 
   var collabsUrl = 'https://api.github.com/repos/crabasa/seattlehacks/collaborators?callback=?';
-  $.when( $.getJSON(forksUrl), $.getJSON(collabsUrl) ).done(function(forks, collabs) {
-    console.log(forks);
-    forks[0].data.forEach(function(fork) {
-      peeps[fork.owner.login] = {url: 'https://github.com/'+fork.owner.login, avatar_url: fork.owner.avatar_url};
-    });
+  $.when( $.getJSON(collabsUrl) ).done(function(collabs) {
     collabs[0].data.forEach(function(collab) {
       peeps[collab.login] = {url: 'https://github.com/'+collab.login, avatar_url: collab.avatar_url};
     });
