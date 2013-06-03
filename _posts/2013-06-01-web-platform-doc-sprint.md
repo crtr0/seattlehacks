@@ -4,8 +4,8 @@ author: GregBulmash
 layout: post
 event-name: Web Platform Doc Sprint Seattle
 event-allday: false
-event-start: 2013-04-24 18:00:00
-event-end: 2013-04-24 20:30:00
+event-start: 2013-06-22 08:30:00
+event-end: 2013-06-22 19:00:00
 event-venue: Microsoft Westlake
 event-address: 320 Westlake Ave, Seattle, WA 98109
 event-website: http://seattledocsprint-es2.eventbrite.com/
