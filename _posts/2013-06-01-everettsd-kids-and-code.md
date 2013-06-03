@@ -4,8 +4,8 @@ author: GregBulmash
 layout: post
 event-name: Programming and Children
 event-allday: false
-event-start: 2013-06-17T19:00:00-08:00
-event-end: 2013-06-17T21:00:00-8:00
+event-start: 2013-06-17 19:00:00
+event-end: 2013-06-17 21:00:00
 event-venue: Journey Church
 event-address: 2814 Colby Avenue, Everett, WA
 event-website: http://www.meetup.com/Everett-Software-Developers/events/119213462/
