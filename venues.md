@@ -22,5 +22,13 @@ Feel free to [contribute][] more venues, just follow the format you see below. Y
 * Contact: Sean Sperte, sean@tagboard.com
 * Website: [http://tagboard.com/](http://tagboard.com)
 
+##Surf Incubator <a name="surf-incubator"></a>
+![map](http://maps.google.com/maps/api/staticmap?center=47.604209,-122.334499&zoom=14&markers=47.604209,-122.334499&size=500x300&sensor=false)
+
+* Location: Seattle (downtown)
+* Address: 821 Second Ave., Suite 800 Seattle, WA 98104
+* Contact: Brandy Davis, brandy@surfincubator.com
+* Website: [http://www.surfincubator.com/](http://www.surfincubator.com/)
+
 [contribute]: /submit
 [static google map generator]: http://gmaps-samples.googlecode.com/svn/trunk/simplewizard/makestaticmap.html
