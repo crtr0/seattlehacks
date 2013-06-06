@@ -13,7 +13,7 @@ tags:
 - hackathon
 - paypal
 ---
-![paypal](/images/2013-06-03-paypal-battle-hacks-logo.jpg)
+![paypal](/img/2013-06-03-paypal-battle-hacks-logo.jpg)
 
 PayPal Battle Hack is a 10 City Hackathon series for devs to come test their skills and change the world. Bring your best ideas for developing apps for social good, find some team members onsite, and make something awesome.
 
