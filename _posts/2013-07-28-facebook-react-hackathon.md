@@ -1,6 +1,6 @@
 ---
-title: Seattle JS - Test the Web Forward and Fun With Angular.js
-author: crabasa
+title: Facebook - React Javascript Hackathon
+author: vjeux
 layout: post
 event-name: Facebook - React Javascript Hackathon
 event-allday: true
