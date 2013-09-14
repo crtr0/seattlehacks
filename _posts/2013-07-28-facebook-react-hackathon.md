@@ -4,8 +4,8 @@ author: vjeux
 layout: post
 event-name: Facebook - React Javascript Hackathon
 event-allday: true
-event-start: 2013-07-28 10:00:00
-event-end: 2013-07-28 22:00:00
+event-start: 2013-09-28 10:00:00
+event-end: 2013-09-28 22:00:00
 event-venue: Facebook Seattle
 event-address: 1730 Minor Avenue, Suite 1800, Seattle, WA 98101
 event-website: http://reactjshack-a-thon.splashthat.com/
