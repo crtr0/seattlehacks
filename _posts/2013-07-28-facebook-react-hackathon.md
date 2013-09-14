@@ -17,7 +17,7 @@ tags:
 
 Here at Facebook, we believe that every engineer should possess amazing ideas and creativity. Hackathons are longstanding tradition at Facebook where our engineers hack for hours working on products or prototypes from scratch. Remember- done is better than perfect.
 
-Join us in Seattle and hack ReactJS. Learn and have fun! Start brainstorming ideas & forming teams (of up to 4 people). We'll supply the food, fun diversions, prizes and guidance from our engineers. You bring your laptop, appetite, skills, and ideas.
+Join us in Seattle and hack [ReactJS](http://facebook.github.io/react/). Learn and have fun! Start brainstorming ideas & forming teams (of up to 4 people). We'll supply the food, fun diversions, prizes and guidance from our engineers. You bring your laptop, appetite, skills, and ideas.
 
 The winning team will win awesome prizes and we'll also raffle swag throughout the event!
 
