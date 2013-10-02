@@ -8,9 +8,13 @@
   <div class="name"><strong>Name:</strong> {{page.event-name}}</div>
   <div class="start"><strong>Start:</strong> {{page.event-start | date: "%b %d %Y, %I:%M %p"}}</div>
   <div class="end"><strong>End:</strong> {{page.event-end | date: "%b %d %Y, %I:%M %p"}}</div>
-  <div class="venue"><strong>Venue:</strong> {{page.event-venue}}</div>
   <div class="website"><strong>Website:</strong> <a href="{{page.event-website}}">{{page.event-website}}</a></div>
+  {% if page.event-venue %}
+  <div class="venue"><strong>Venue:</strong> {{page.event-venue}}</div>
+  {% endif %}
+  {% if page.event-address %}
   <div class="address"><a href="//maps.google.com/maps?q={{page.event-address | cgi_escape}}"><img src="http://maps.googleapis.com/maps/api/staticmap?center={{page.event-address | cgi_escape}}&markers=size:mid%7Ccolor:red%7C{{page.event-address | cgi_escape}}&size=340x200&maptype=roadmap&zoom=16&sensor=false"/></a></div>
+  {% endif %}
 </div>
 {% endif %}
 {{ page.content | markdownify }}

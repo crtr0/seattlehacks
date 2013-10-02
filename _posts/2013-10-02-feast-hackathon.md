@@ -6,8 +6,6 @@ event-name: Feast Hackathon
 event-allday: true
 event-start: 2013-10-12 09:00:00
 event-end: 2013-10-13 18:00:00
-event-venue: NYC
-event-address: New York, NY
 event-website: http://feastongood.com/2013/conference/hackathon
 tags:
 - hackathon
