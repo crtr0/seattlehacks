@@ -62,7 +62,7 @@ title: Home
 
 <h1>Community</h1>
 <p>This site would not be possible without the contributions of the developer
-community here in Seattle, one pull request at a time. Thank you!</p>
+community here in New York, one pull request at a time. Thank you!</p>
 <div id="collaborators">
 </div>
 
@@ -75,8 +75,8 @@ function renderPeeps(peeps) {
 
 $(document).ready(function() {
   var peeps = {};
-  var forksUrl = 'https://api.github.com/repos/crabasa/seattlehacks/forks?callback=?'; 
-  var collabsUrl = 'https://api.github.com/repos/crabasa/seattlehacks/collaborators?callback=?';
+  var forksUrl = 'https://api.github.com/repos/jonmarkgo/nyhacks/forks?callback=?'; 
+  var collabsUrl = 'https://api.github.com/repos/jonmarkgo/nyhacks/collaborators?callback=?';
   $.when( $.getJSON(forksUrl), $.getJSON(collabsUrl) ).done(function(forks, collabs) {
     console.log(forks);
     forks[0].data.forEach(function(fork) {
