@@ -10,7 +10,7 @@ Feel free to [contribute][] more venues, just follow the format you see below. Y
 ![map](http://maps.google.com/maps/api/staticmap?center=40.753108,-73.989206&zoom=15&markers=40.753108,-73.989206&size=500x300&sensor=false)
 
 * Location: Midtown
-* Address: [500 7th Ave, 17th Floor, New York, NY](https://maps.google.com/maps?q=220+2nd+Ave+South,+Seattle,+WA+98104&hl=en&ll=47.600738,-122.331412&spn=0.012689,0.014892&sll=47.673537,-122.123036&sspn=0.025343,0.029783&gl=us&hnear=220+2nd+Ave+S,+Seattle,+King,+Washington+98104&t=m&z=16)
+* Address: [500 7th Ave, 17th Floor, New York, NY 10018](https://www.google.com/maps/preview#!q=500+7th+ave%2C+new+york%2C++ny&data=!4m10!1m9!4m8!1m3!1d3156!2d-73.9892062!3d40.7531081!3m2!1i1440!2i802!4f13.1)
 * Contact: Haithem Elembaby, haithem@alleynyc.com
 * Website: [http://alleynyc.com/](http://alleynyc.com/)
 
