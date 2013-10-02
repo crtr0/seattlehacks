@@ -7,7 +7,7 @@ PRODID:-//NY Hacks//Events Calendar v1.0//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:NY Hacks Event Calendar
-X-WR-TIMEZONE:America/Los_Angeles
+X-WR-TIMEZONE:America/New_York
 X-WR-CALDESC:Developer events going on in or around New York City{% for post in site.posts %}{% if post.event-name %}
 BEGIN:VEVENT
 UID: {{ post.id }}@nyhacks.com
