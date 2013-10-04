@@ -4,8 +4,8 @@ author: FrancescaK
 layout: post
 event-name: October MongoDB User Group
 event-allday: false
-event-start: 2013-22-12 19:00:00
-event-end: 2013-10-13 21:00:00
+event-start: 2013-22-11 19:00:00
+event-end: 2013-10-11 21:00:00
 event-website: http://www.meetup.com/New-York-MongoDB-User-Group/
 tags:
 - user-group
