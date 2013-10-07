@@ -6,6 +6,8 @@ event-name: October MongoDB User Group
 event-allday: false
 event-start: 2013-10-22 19:00:00
 event-end: 2013-10-22 21:00:00
+event-venue: About.com
+event-address: 1500 Broadway, 6th floor, NY , New York, ny
 event-website: http://www.meetup.com/New-York-MongoDB-User-Group/
 tags:
 - user-group
