@@ -4,8 +4,8 @@ author: boldbigflank
 layout: post
 event-name: AngelHack Seattle Fall 2013
 event-allday: true
-event-start: 2013-11-02 09:00:00
-event-end: 2013-11-03 17:00:00
+event-start: 2013-11-02 09:00:00 -0800
+event-end: 2013-11-03 17:00:00 -0800
 event-venue: SURF Incubator
 event-address: 821 2nd Avenue Ste. 800 Seattle, WA 98104
 event-website: https://apphack13seattle.eventbrite.sg/
