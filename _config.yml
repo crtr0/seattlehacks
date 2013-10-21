@@ -1,13 +1,13 @@
 meta:
-  site_title: "Seattle Hacks"
-  site_subtitle: "For Seattle developers, by Seattle developers"
+  site_title: "NY Hacks"
+  site_subtitle: "For New York developers, by New York developers"
   site_language: "en"
-  absolute_baseurl: http://seattlehacks.com
-  domain: seattlehacks.com
+  absolute_baseurl: http://nyhacks.com
+  domain: nyhacks.com
   author:
-    full_name: Carter Rabasa
-    short_name: crabasa
-    email: carter@rabasa.com
+    full_name: Jon Gottfried
+    short_name: jonmarkgo
+    email: jonmarkgo@gmail.com
 
 pygments: true
 markdown: rdiscount
