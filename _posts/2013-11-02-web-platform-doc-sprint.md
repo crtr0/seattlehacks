@@ -4,8 +4,8 @@ author: dstorey
 layout: post
 event-name: Web Platform Doc Sprint @ UW, Seattle
 event-allday: true
-event-start: 2013-09-28 08:30:00
-event-end: 2013-09-28 18:00:00
+event-start: 2013-11-02 08:30:00
+event-end: 2013-11-02 18:00:00
 event-venue: Husky Union Building on the UW Campus, Room #250
 event-address: 4001 Northeast Stevens Way, Seattle, WA 98195
 event-website: https://www.eventbrite.com/event/8903872723
