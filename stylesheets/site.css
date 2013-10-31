@@ -54,3 +54,12 @@ h1.extra {
 .event { margin-bottom: 5px }
 
 footer { margin-top: 30px }
+
+/* hacks to remove extraneous width of social buttons */
+#___plusone_0 {
+  width: 70px !important;
+}
+
+#twitter-widget-0 {
+  width: 87px !important;
+}
