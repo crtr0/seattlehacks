@@ -1,4 +1,4 @@
-﻿---
+---
 title: Web Platform Doc Sprint @ UW, Seattle
 author: dstorey
 layout: post
