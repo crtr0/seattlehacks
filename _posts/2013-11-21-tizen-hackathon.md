@@ -12,7 +12,6 @@ event-website: http://tizensea.eventbrite.com/?aff=SEAh
 tags:
 - hackathon
 - workshop  
-   
 ---  
   
 ![alt text](http://i.imgur.com/DItKGlx.jpg "")  
