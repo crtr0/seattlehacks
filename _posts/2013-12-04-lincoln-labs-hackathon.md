@@ -12,7 +12,7 @@ event-website: https://www.eventbrite.com/e/seattle-hackathon-open-government-ti
 tags:
 - hackathon
 - liberty
----  
+---
 
 Want to win $5000 in cash prizes? Is government spending or spying a concern? If the answer is yes, join Seattle’s top entrepreneurs/engineers and develop creative ideas for improving government transparency!
   
