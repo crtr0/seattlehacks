@@ -13,7 +13,7 @@ tags:
 - hackathon
 - liberty
 ---  
-  
+
 Want to win $5000 in cash prizes? Is government spending or spying a concern? If the answer is yes, join Seattle’s top entrepreneurs/engineers and develop creative ideas for improving government transparency!
   
 This hackathon will provide a diverse group of innovators the opportunity build creative products within 24 hours that empower citizens to be more informed. Participants will have access to awesome teams, lots of food and energy shots......and did we mention winners will take home $5000 in cash prizes!
