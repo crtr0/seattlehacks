@@ -1,8 +1,8 @@
 ---
-title: Liberty Hackathon: Open Government
+title: Liberty Hackathon - Open Government
 author: lincolnlabs
 layout: post
-event-name: Liberty Hackathon: Open Government
+event-name: Liberty Hackathon - Open Government
 event-allday: true  
 event-start: 2013-12-06 18:00:00  
 event-end: 2013-12-07 21:00:00  
