@@ -1,7 +1,7 @@
 ---
 title: Liberty Hackathon: Open Government
 author: lincolnlabs
-layout: post  
+layout: post
 event-name: Liberty Hackathon: Open Government
 event-allday: true  
 event-start: 2013-12-06 18:00:00  
@@ -18,4 +18,3 @@ Want to win $5000 in cash prizes? Is government spending or spying a concern? If
   
 This hackathon will provide a diverse group of innovators the opportunity build creative products within 24 hours that empower citizens to be more informed. Participants will have access to awesome teams, lots of food and energy shots......and did we mention winners will take home $5000 in cash prizes!
 
-Test.
