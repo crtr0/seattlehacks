@@ -7,7 +7,7 @@ event-allday: true
 event-start: 2014-02-15 09:00:00  
 event-end: 2014-02-15 18:00:00  
 event-venue: Buddy.com HQ
-event-address: 1418 3rd Ave Suite #300, Seattle, WA, 98101
+event-address: 1418 3rd Ave, Seattle, WA 98101
 event-website: http://buddy.shindigg.com/
 tags:
 - hackathon
