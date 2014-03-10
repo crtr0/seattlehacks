@@ -2,6 +2,7 @@
 title: 2014 Global Windows Azure Bootcamp - Redmond, WA
 author: abe238
 layout: post
+date: 2014-02-21T00:00:0.0
 event-name: 2014 Global Windows Azure Bootcamp - Redmond
 event-allday: true  
 event-start: 2014-03-29 09:00:00  
