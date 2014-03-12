@@ -42,28 +42,28 @@ Anything that transforms lives with a Christian world view. Create something tha
 
 ### Past Winners
 
-**Scriptive**
-https://www.scriptive.org/  
+[Scriptive](https://www.scriptive.org/)
+
 Personalized scripture recommendations
  
-**Deedvine**
-http://www.deedvine.com/  
+[Deedvine](http://www.deedvine.com/)
+
 Grow your cause into a movement
  
-**Treasure Hunt**
-http://treasurehunt.launchrock.com/  
+[Treasure Hunt](http://treasurehunt.launchrock.com/) 
+
 Story-driven geocaching games to teach kids scripture
  
-**UResQ**
-http://www.urescue.org/  
+[UResQ](http://www.urescue.org/)
+
 Recognize and report human trafficking
  
-**IMDBible**
-http://imdbible.aweandreverence.com/  
+[IMDBible](http://imdbible.aweandreverence.com/)
+
 Study tool focused on biblical people
  
-**Recycle My Water**
-http://recyclemywater.wikispaces.com/home  
+[Recycle My Water](http://recyclemywater.wikispaces.com/home)
+
 Atmospheric Water Generator
 
 [1]: http://www.codeforthekingdom.org/
