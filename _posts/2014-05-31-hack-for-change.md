@@ -21,5 +21,5 @@ tags:
 
 The Seattle event is one of dozens planned around the country, and will be part hackathon, part unconference.
 
-![Hack for Change Flier](http://codeforseattle.org/images/hfc-2014/hackforchange-2014-flier.png)
+[![Hack for Change Flier](http://codeforseattle.org/images/hfc-2014/hackforchange-2014-flier.png)](http://codeforseattle.org/hackforchange)
 
