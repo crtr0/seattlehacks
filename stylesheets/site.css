@@ -1,14 +1,7 @@
+#community_email { width: 300px; float:left;}
+#community_twitter { width: 300px; float:left; margin-left:10px;}
+
 body {
-  padding-top: 40px;
-  background-color: #eee;
-  margin: 0px 50px;
-}
-
-
-.navbar .navbar-inner {
-  /*background-color: #5B9C64;*/
-  /*background-image: -webkit-linear-gradient(top, #5B9C64, #517B58);*/
-  padding-left: 20px;
 }
 
 
