@@ -3,7 +3,7 @@ title: Cascadia JSFest 2015
 author: crtr0
 layout: post
 event-name: Cascadia JSFest 2015
-event-allday: true
+event-multiday: true
 event-start: 2015-07-08 08:00:00
 event-end: 2015-07-10 17:00:00
 event-venue: Semiahmoo Resort
