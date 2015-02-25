@@ -5,27 +5,35 @@ title: Calendar of Events
 <div id="calendar">
 </div>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
+
 <script>
 
 
-var timing = function(start, end) {
+/*var timing = function(start, end) {
   // this can be improved another time
-  return moment(start, "YYYY-MM-DD HH:mm:ss Z").format('MM/DD/YYYY h:mma') + ' - ' + moment(end, "YYYY-MM-DD HH:mm:ss Z").format('MM/DD/YYYY h:mma');
-};
+  return moment(start, "YYYY-MM-DD HH:mm:ss").tz('America/Los_Angeles').format('MM/DD/YYYY h:mma') + ' - ' + moment(end, "YYYY-MM-DD HH:mm:ss Z").tz('America/Los_Angeles').format('MM/DD/YYYY h:mma');
+};*/
 
 $(document).ready(function() {
   $.getJSON('/api/cal.json', null, function(response) {
-    moment().local();
+    //moment().local();
+    console.log(response.events);
     var groups = _.groupBy(response.events, function(event) {
-      return moment(event.start, "YYYY-MM-DD HH:mm:ss Z").format('YYYY-MM-DD');
+      
+      return moment(event.start, "MM/DD/YY HH:mm:ss").format('YYYY-MM-DD');
     });
     days = _.sortBy(Object.keys(groups), function(day) { return day });
     days.forEach(function(day) {
       if (moment(day).isAfter(moment().subtract('days', 1))) {
         $('<h2>' + moment(day).format('MMMM Do') + '</h2>').appendTo('#calendar');
         groups[day].forEach(function(event) {
-          $('<div class="event"><div class="title"><a href="' + event.url + '">' + event.name + ' @ ' + event.venue  + '</a></div><div class="timing">' + moment(event.start, "YYYY-MM-DD HH:mm:ss Z").format('h:mm a') + ' - ' + moment(event.end, "YYYY-MM-DD HH:mm:ss Z").format('h:mm a') + '</div></div>').appendTo('#calendar');
+          if (event.multiday === "true") {
+            $('<div class="event"><div class="title"><a href="' + event.url + '">' + event.name + ' @ ' + event.venue  + '</a></div><div class="timing">' + moment(event.start, "MM/DD/YY HH:mm:ss").format('MMMM Do') + ' - ' + moment(event.end, "MM/DD/YY HH:mm:ss").format('MMMM Do') + '</div></div>').appendTo('#calendar');
+          }
+          else {
+            $('<div class="event"><div class="title"><a href="' + event.url + '">' + event.name + ' @ ' + event.venue  + '</a></div><div class="timing">' + moment(event.start, "MM/DD/YY HH:mm:ss").format('h:mm a') + ' - ' + moment(event.end, "MM/DD/YY HH:mm:ss").format('h:mm a') + '</div></div>').appendTo('#calendar');
+          }
         });
       }
     });
