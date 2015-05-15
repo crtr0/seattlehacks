@@ -1,5 +1,7 @@
 #Seattle Hacks
 
+[![Join the chat at https://gitter.im/crtr0/seattlehacks](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/crtr0/seattlehacks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ![Seattle Hacks logo](http://seattlehacks.com/img/seattlehacks_logo_large.png)
 
 This is the repo for [Seattle Hacks][], a community-driven online resource by devs for devs. The purpose of the site is to highlight the best resources and events for developers in the Seattle area. One of the design goals was to create a site that would be resistant to blog and event listing SPAM while still providing minimal friction to developers for posting content. Here's how we did it:
