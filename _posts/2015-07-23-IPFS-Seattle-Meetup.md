@@ -7,7 +7,7 @@ event-multiday: false
 event-start: 2015-07-23 19:00:00
 event-end: 2015-07-23 21:00:00
 event-venue: Surf Incubator
-event-address: 9565 SEMIAHMOO PARKWAY, Blaine, WA 98230
+event-address: 821 2nd Ave, Seattle, WA 98104
 event-website: http://www.meetup.com/Seattle-IPFS-Meetup/events/224077819/
 tags:
 - meetup
